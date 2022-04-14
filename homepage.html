@@ -54,7 +54,8 @@ p {text-align: center;}
 div {text-align: center,;}
 
 body, html {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
   font-style: oblique;
@@ -64,7 +65,7 @@ body, html {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 0px solid #f1f1f1;
   perspective: 1000px;
   float: right;
   float: left;
@@ -105,7 +106,7 @@ body, html {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 0px solid #f1f1f1;
   perspective: 1000px;
   float: right;
 }
@@ -191,10 +192,10 @@ body, html {
 }
 
 .zoom {
-  padding: 50px;
+  padding: 30px;
   transition: transform .2s;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 10s0px;
   margin: 0 auto;
 }
 
@@ -239,9 +240,7 @@ body, html {
     </div>
   </div>
 </div>
-
 <p>Choose your pick</p>
-<br>
 <p>
     <input type="file"  accept="image/*" name="image" id="imgfile"  onchange="loadFile(event)">
     <p><img id="output" width="300" height="200" /></p>
